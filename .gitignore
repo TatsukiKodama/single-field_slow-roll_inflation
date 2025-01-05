@@ -1,0 +1,17 @@
+main
+*.o
+obj/
+
+# output系
+output/
+*.dat
+*.pdf
+
+# python系
+venv
+__pycache__
+
+# その他
+doc
+doc/
+.DS_Store
