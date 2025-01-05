@@ -32,13 +32,14 @@ double hubble(Field field) {
     return sqrt(rho/3.0);
 }
 
+const double NUM = 100.0;
 double get_time_step(Field field) {
     double hub = hubble(field);
     double m_eff = sqrt(deriv2_potential(field));
     if (hub >= m_eff) {
-        return (1.0/hub)/100.0;
+        return (1.0/hub)/NUM;
     }else {
-        return (1.0/m_eff)/100.0;
+        return (1.0/m_eff)/NUM;
     }
 }
 

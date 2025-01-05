@@ -3,7 +3,8 @@ main
 obj/
 
 # output系
-output/
+output/fig
+output/dat
 *.dat
 *.pdf
 
